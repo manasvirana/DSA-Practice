@@ -31,7 +31,7 @@ class Solution{
     int kthSmallestInBst(TreeNode* root, int k){
         vector<int> v;
         inOrder(root,v);
-        if(k>=v.size() || k<=0) return -1;
+        if(k>v.size() || k<=0) return -1;
         return v[k-1];
 
     }
